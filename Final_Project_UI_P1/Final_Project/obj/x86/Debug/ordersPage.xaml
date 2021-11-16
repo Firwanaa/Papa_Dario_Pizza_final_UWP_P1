@@ -1,0 +1,54 @@
+﻿<Page
+    x:Class="Final_Project.ordersPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Final_Project"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid Background="#FF846587">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="0*"/>
+        </Grid.RowDefinitions>
+        <Button x:ConnectionId='2' x:Name="btnConnect" Content="Confirm" Margin="125,560,0,375" VerticalAlignment="Stretch"                          Width="355" FontSize="24" Background="#337EDA21"/>
+        <ComboBox x:ConnectionId='3' x:Name="combPizzaSize" Margin="225,243,0,0" Width="120"  Height="32">
+            <ComboBoxItem Content="6"/>
+            <ComboBoxItem Content="12"/>
+            <ComboBoxItem Content="24"/>
+        </ComboBox>
+        <TextBlock HorizontalAlignment="Left" Margin="99,250,0,0" Text="Pizza Size" TextWrapping="Wrap" VerticalAlignment="Top" Height="19" Width="111"/>
+        <ComboBox x:ConnectionId='4' x:Name="combKind" Margin="225,293,0,0" Width="120"  Height="32">
+            <ComboBoxItem Content="Cheeze"/>
+            <ComboBoxItem Content="Veggie"/>
+            <ComboBoxItem Content="Pepperpni"/>
+        </ComboBox>
+        <TextBlock HorizontalAlignment="Left" Margin="99,300,0,0" Text="Kind" TextWrapping="Wrap" VerticalAlignment="Top" Height="19" Width="80"/>
+        <CheckBox x:ConnectionId='5' x:Name="TcbBroc" Content="Broccolini " Margin="225,360,0,0" VerticalAlignment="Top" Height="32" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Margin="85,367,0,0" Text="Toppings $3 each:" TextWrapping="Wrap" VerticalAlignment="Top" Height="19" Width="122"/>
+        <CheckBox x:ConnectionId='6' x:Name="TcbPot" Content="Potato" Margin="350,360,0,0" VerticalAlignment="Top" Height="32" Width="120"/>
+        <CheckBox x:ConnectionId='7' x:Name="TcbOli" Content="Olives" Margin="450,360,0,0" VerticalAlignment="Top" Height="32" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Margin="90,425,0,0" Text="Additions $3 each:" TextWrapping="Wrap" VerticalAlignment="Top" Height="19" Width="120"/>
+        <CheckBox x:ConnectionId='8' x:Name="AcbWings" Content="Wings" Margin="225,420,0,0" VerticalAlignment="Top" Height="32" Width="120"/>
+        <CheckBox x:ConnectionId='9' x:Name="AcbSand" Content="Papa Sandwich" Margin="350,420,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.769,0.625" Height="32" Width="130"/>
+        <CheckBox x:ConnectionId='10' x:Name="AcbGu" Content="Gulab Jamuns" Margin="610,420,0,0" VerticalAlignment="Top" Height="32" Width="220"/>
+        <CheckBox x:ConnectionId='11' x:Name="AcbPout" Content="Poutine" Margin="500,420,0,0" VerticalAlignment="Top" Height="32" Width="120"/>
+        <Image HorizontalAlignment="Left" Height="100" Margin="470,150,0,0" VerticalAlignment="Top" Width="100" Source="Assets/pizzaSize.png"/>
+        <Image HorizontalAlignment="Left" Height="146" Margin="601,123,0,0" VerticalAlignment="Top" Width="179" Source="/Assets/pizzaSize.png"/>
+        <Image HorizontalAlignment="Left" Height="212" Margin="795,90,0,0" VerticalAlignment="Top" Width="289" Source="/Assets/pizzaSize.png"/>
+        <TextBlock HorizontalAlignment="Left" Margin="503,66,0,0" Text="$6.99" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="664,66,0,0" Text="$9.99" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="894,66,0,0" Text="$14.99" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="99,485,0,0" Text="Drinks $3 each:" TextWrapping="Wrap" VerticalAlignment="Top" Height="19" Width="111"/>
+        <CheckBox x:ConnectionId='12' x:Name="DcbSoda" Content="Soda" Margin="225,478,0,0" VerticalAlignment="Top" Height="32" Width="120"/>
+        <CheckBox x:ConnectionId='13' x:Name="DcbWater" Content="Water" Margin="350,478,0,0" VerticalAlignment="Top" Height="32" Width="120"/>
+        <TextBlock x:ConnectionId='14' x:Name="tbHi" HorizontalAlignment="Left" Margin="77,66,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Hey ! " FontSize="36"/>
+        <TextBlock x:ConnectionId='15' x:Name="tbGlobalUserName" HorizontalAlignment="Left" Margin="174,66,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="36" Foreground="#FF61FD08" Width="121"                                                     />
+        <TextBlock x:ConnectionId='16' HorizontalAlignment="Left" Margin="62,148,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="46" Width="296"                                               FontSize="36"><Run Text="Place your order:"/><LineBreak/><Run/></TextBlock>
+        <Button x:ConnectionId='17' x:Name="btnSave" Content="Save Receipt" Margin="125,640,0,295" VerticalAlignment="Stretch"  Width="355" FontSize="24" Background="#33013D7A"                       IsEnabled="False"/>
+
+    </Grid>
+</Page>
+

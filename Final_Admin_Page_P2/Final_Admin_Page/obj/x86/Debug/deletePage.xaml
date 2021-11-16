@@ -1,0 +1,19 @@
+﻿<Page
+    x:Class="Final_Admin_Page.deletePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Final_Admin_Page"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid Background="#FF511D37">
+        <TextBlock HorizontalAlignment="Center" Margin="0,170,0,0" Text="Delete Page" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="48"/>
+        <TextBlock HorizontalAlignment="Left" Margin="239,308,0,0" Text="By Username:" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="36" Height="94"/>
+        <TextBox x:ConnectionId='2' x:Name="tbUsername" HorizontalAlignment="Left" Margin="510,308,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="71" Width="585" PlaceholderText="username"/>
+        <Button x:ConnectionId='3' x:Name="btnDelete" Content="Delete" Margin="631,500,0,0" VerticalAlignment="Top" Height="115" Width="245" FontSize="24"                        />
+
+    </Grid>
+</Page>
+

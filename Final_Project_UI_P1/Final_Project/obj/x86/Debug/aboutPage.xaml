@@ -1,0 +1,24 @@
+﻿<Page
+    x:Class="Final_Project.aboutPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Final_Project"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="#FF7F1A2D">
+
+    <Grid Background="#FFBB4444">
+        <TextBlock HorizontalAlignment="Left" Margin="72,95,0,0" Text="About Papa Dario's Pizza" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="48" FontWeight="Bold" Width="630">
+            <TextBlock.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FF4B334D" Offset="1"/>
+                </LinearGradientBrush>
+            </TextBlock.Foreground>
+        </TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="72,209,0,0" Text="Papa Dario's Pizza is A Carefully Engineered Pizza, For The First Time In Human History, Pizza Can Be Ordered Online And Delivered By Email, Yes By Email. Our Engineering Lab Implemented Quantum physics, Quantitative Biology And Nutrigenomics To Provide You The Most Advanced Pizza and The Majestic Gulab Jamun." TextWrapping="Wrap" VerticalAlignment="Top" FontSize="24" Height="573" Width="979"/>
+
+    </Grid>
+</Page>
+

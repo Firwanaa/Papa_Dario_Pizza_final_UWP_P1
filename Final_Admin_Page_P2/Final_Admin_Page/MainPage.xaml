@@ -1,0 +1,39 @@
+﻿<Page
+    x:Class="Final_Admin_Page.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Final_Admin_Page"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="#FF511D37">
+
+    <Grid>
+        <Grid >
+            <GridView x:Name="dataGrid" Height="200" Width="700" Margin="720,550,580,250"/>
+        </Grid>
+        <NavigationView PaneDisplayMode="Top" Loaded="LoadPage" SelectionChanged="SelectionChanged" IsSettingsVisible="False" IsBackButtonVisible="Collapsed">
+            <NavigationView.MenuItems>
+
+                <NavigationViewItemHeader Content="Admin" />
+                <NavigationViewItemSeparator/>
+                <NavigationViewItemSeparator/>
+                <NavigationViewItem Content="View Users" Icon="People" Tag="viewPage" IsSelected="False"/>
+                <NavigationViewItemSeparator/>
+                <NavigationViewItemSeparator/>
+                <NavigationViewItem Content="Insert User" Icon="People" Tag="insertPage"/>
+                <NavigationViewItemSeparator/>
+                <NavigationViewItemSeparator/>
+                <NavigationViewItem Content="Update User"  Icon="People" Tag="updatePage"/>
+                <NavigationViewItemSeparator/>
+                <NavigationViewItemSeparator/>
+                <NavigationViewItem Content="Delete User" Icon="People" Tag="deletePage"/>
+                <NavigationViewItemSeparator/>
+                <NavigationViewItemSeparator/>
+            </NavigationView.MenuItems>
+            <ScrollViewer>
+                <Frame x:Name="ContentFrame" RequestedTheme="Dark"/>
+            </ScrollViewer>
+        </NavigationView>
+    </Grid>
+</Page>

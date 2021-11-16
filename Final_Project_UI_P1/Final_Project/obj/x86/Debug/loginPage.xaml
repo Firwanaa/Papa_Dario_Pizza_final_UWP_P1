@@ -1,0 +1,31 @@
+﻿<Page
+    x:Class="Final_Project.loginPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Final_Project"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid Background="#FF7A4633">
+
+        <TextBox x:ConnectionId='2' x:Name="tbLogUsername" HorizontalAlignment="Left" Margin="426,371,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="30" Width="450" PlaceholderText="joe123" FocusVisualPrimaryBrush="#FFB93737" Visibility="Visible"/>
+        <TextBlock x:ConnectionId='3' x:Name="lblpass" HorizontalAlignment="Left" Margin="224,441,0,0" Text="Password:" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22" Foreground="White" RenderTransformOrigin="0.429,2.379" Visibility="Visible"/>
+        <PasswordBox x:ConnectionId='4' x:Name="tbLogPassword" HorizontalAlignment="Left" Margin="426,441,0,0" VerticalAlignment="Top" Width="450" PlaceholderText="password" FocusVisualPrimaryBrush="#FFD16565" Visibility="Visible"/>
+        <Button x:ConnectionId='5' x:Name="btnSubmit" Content="Submit" Margin="426,544,0,0" VerticalAlignment="Top" Width="450" Background="#3300FFC5"                      Visibility="Visible"/>
+        <TextBlock x:ConnectionId='6' x:Name="lbluser" HorizontalAlignment="Left" Margin="224,371,0,0" Text="Username" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22" Foreground="White" RenderTransformOrigin="0.429,2.379" Visibility="Visible"/>
+        <TextBlock x:ConnectionId='7' x:Name="lblHeader" HorizontalAlignment="Left" Margin="434,210,0,0" Text="Log In" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="72" Foreground="#FFEAEA25" Width="432"/>
+        <Button x:ConnectionId='8' x:Name="btnLogout" Content="Log out" Margin="426,608,0,0" VerticalAlignment="Top" Width="450" Background="#33F3360C"                         Visibility="Visible"/>
+        <Button x:ConnectionId='9' x:Name="btnEdit" Content="Edit User Info" Margin="425,665,0,0" VerticalAlignment="Top" Width="450" Background="#3300FFC5" Visibility="Visible"                       IsEnabled="False"/>
+        <TextBlock x:ConnectionId='10' x:Name="lblEditName" HorizontalAlignment="Left" Margin="287,376,0,0" Text="Name:" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="24" Visibility="Collapsed"/>
+        <TextBox x:ConnectionId='11' x:Name="tbEditName" HorizontalAlignment="Left" Margin="419,375,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="456" FontSize="16" Visibility="Collapsed"/>
+        <TextBlock x:ConnectionId='12' x:Name="lblEditEmail" HorizontalAlignment="Left" Margin="293,430,0,0" Text="Email:" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="24" Visibility="Collapsed"/>
+        <TextBox x:ConnectionId='13' x:Name="tbEditEmail" HorizontalAlignment="Left" Margin="419,430,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="456" FontSize="16" Visibility="Collapsed"/>
+        <TextBlock x:ConnectionId='14' x:Name="lblEditNumber" HorizontalAlignment="Left" Margin="278,480,0,0" Text="Phone:" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="24" Visibility="Collapsed"/>
+        <TextBox x:ConnectionId='15' x:Name="tbEditNumber" HorizontalAlignment="Left" Margin="420,485,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="455" FontSize="16" Visibility="Collapsed"/>
+        <Button x:ConnectionId='16' x:Name="btnOK" Content="Ok" Margin="425,583,0,0" VerticalAlignment="Top" Width="450" Background="#33F3360C" Visibility="Collapsed"                    />
+
+    </Grid>
+</Page>
+
